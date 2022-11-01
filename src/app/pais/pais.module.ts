@@ -7,6 +7,7 @@ import { PorPaisComponent } from './pages/por-pais/por-pais.component';
 import { PorRegionComponent } from './pages/por-region/por-region.component';
 import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { RouterModule } from '@angular/router';
+import { EjemploArregloComponent } from './pages/ejemplo-arreglo/ejemplo-arreglo.component';
 
 
 
@@ -16,13 +17,15 @@ import { RouterModule } from '@angular/router';
     PorCapitalComponent,
     PorPaisComponent,
     PorRegionComponent,
-    VerPaisComponent
+    VerPaisComponent,
+    EjemploArregloComponent
   ],
   exports:[
     PorCapitalComponent,
     PorPaisComponent,
     PorRegionComponent,
-    VerPaisComponent
+    VerPaisComponent,
+    EjemploArregloComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,84 @@
+<h2>Ejemplo agregar pais
+
+</h2>
+<hr>
+
+
+
+<hr>
+
+<div class="row">
+    <form (ngSubmit)="agregar()">
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre del Pais:</label>
+            <input 
+        class="input form-control"
+        type="text"
+         placeholder="Nombre" 
+         name="nombre" 
+         [(ngModel)]="nuevoPais.data.nombre">
+        <!-- [value]="nuevo.nombre"
+        (input)="cambiarNombre( $event )" -->
+          </div>
+
+          <div class="mb-3">
+            <label for="capital" class="form-label">Capital:</label>
+            <input 
+            class="input form-control"
+            type="text"
+            placeholder="Capital" 
+            name="capital" 
+            [(ngModel)]="nuevoPais.data.capital">
+        
+          </div>
+        
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Url bandera:</label>
+            <input 
+            class="input form-control"
+            type="text"
+            placeholder="Capital" 
+            name="bandera" 
+            [(ngModel)]="nuevoPais.bandera">
+        
+          </div>
+
+
+        <button class="btn btn-primary" type="submit">Agregar</button>
+    
+    </form>
+</div>
+
+
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- <table *ngIf="!hayError" class="table table-hover"> -->
+        <table  class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Bandera</th>
+                    <th>Nombre</th>
+                    <th>Capital</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let pais of paisLocal ; let i = index">
+                <td> {{ i+1 }}</td>
+                <td>
+                    <img [src]="pais.bandera" alt="" 
+                    class="small-flag">
+                </td>
+                <td> {{ pais.data.nombre }} </td>
+                <td>{{ pais.data.capital }}</td>
+                <td>
+                    <!-- <a href="/pais/mex">ver..</a> -->
+                    
+                </td>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,3 +1,21 @@
+export interface Pais {
+    data:       Data;
+    timezones:    string[];
+    cca2:         string;
+    bandera:      string;
+}
+ 
+export interface Data {
+    nombre:     string;
+    capital?:    string;
+    region:       string;
+}
+
+
+
+
+
+
 export interface Country {
     name:         Name;
     tld:          string[];
