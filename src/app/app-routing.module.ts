@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { EjemploArregloComponent } from "./pais/pages/ejemplo-arreglo/ejemplo-arreglo.component";
+import { Pages404Component } from "./pais/pages/pages404/pages404.component";
 import { PorCapitalComponent } from "./pais/pages/por-capital/por-capital.component";
 import { PorPaisComponent } from "./pais/pages/por-pais/por-pais.component";
 import { PorRegionComponent } from "./pais/pages/por-region/por-region.component";
@@ -24,6 +25,10 @@ const routes: Routes=[
     {
         path:'ejemplo',
         component:EjemploArregloComponent
+    },
+    {
+        path:'404',
+        component:Pages404Component
     },
     {
         path:'pais/:id',

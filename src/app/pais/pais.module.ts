@@ -9,6 +9,7 @@ import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { RouterModule } from '@angular/router';
 import { EjemploArregloComponent } from './pages/ejemplo-arreglo/ejemplo-arreglo.component';
 import { Pages404Component } from './pages/pages404/pages404.component';
+import { PaisTableComponent } from './components/pais-tablle/pais-table.component';
 
 
 
@@ -20,7 +21,8 @@ import { Pages404Component } from './pages/pages404/pages404.component';
     PorRegionComponent,
     VerPaisComponent,
     EjemploArregloComponent,
-    Pages404Component
+    Pages404Component,
+    PaisTableComponent
   ],
   exports:[
     PorCapitalComponent,

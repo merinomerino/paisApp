@@ -32,7 +32,7 @@ export class PorPaisComponent implements OnInit {
           },(err =>{
             this.hayError= true;
             this.paises=[];
-            // this.router.navigate(['/ejemplo']);
+            // this.router.navigate(['/404']);
           }) )
 
   }
