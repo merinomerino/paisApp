@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { EjemploArregloComponent } from './pages/ejemplo-arreglo/ejemplo-arreglo.component';
 import { Pages404Component } from './pages/pages404/pages404.component';
 import { PaisTableComponent } from './components/pais-tablle/pais-table.component';
+import { PaisInputComponent } from './components/pais-input/pais-input.component';
 
 
 
@@ -22,7 +23,8 @@ import { PaisTableComponent } from './components/pais-tablle/pais-table.componen
     VerPaisComponent,
     EjemploArregloComponent,
     Pages404Component,
-    PaisTableComponent
+    PaisTableComponent,
+    PaisInputComponent
   ],
   exports:[
     PorCapitalComponent,

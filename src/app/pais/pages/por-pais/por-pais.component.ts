@@ -23,9 +23,10 @@ export class PorPaisComponent implements OnInit {
    
   }
 
-  buscar(){
+  buscar(termino:string){
     this.hayError= false;
-    this.paisService.buscarPais(this.termino)
+    this.termino=termino;
+    this.paisService.buscarPais(termino)
           .subscribe(paises=>{
             // console.log(paises)
             this.paises=paises;
@@ -35,6 +36,14 @@ export class PorPaisComponent implements OnInit {
             // this.router.navigate(['/404']);
           }) )
 
+
+  }
+
+
+  
+  sugerencias(termino:string){
+    this.hayError=false;
+    //crear sugencia
   }
 
 }

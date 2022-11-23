@@ -3,24 +3,24 @@
 
 <div class="row">
     <div class="col">
-        <form (ngSubmit)="buscar()" autocomplete="off">
-            <input type="text"
-                    [(ngModel)]="termino"
-                    name="termino"
-                    class="form-control"
-                    placeholder="Buscar pais...">
-        </form>
+        <app-pais-input
+        (onEnter)="buscar( $event )"
+        (onDebounce)="sugerencias($event)"
+        placeholder="Buscar Pais..."
+        >
+        </app-pais-input>
     </div>
 </div>
 
 <hr>
 <div *ngIf="hayError" class="alert alert-danger">
-    No se encontro nada con el termino ABC
+    No se encontro nada con el termino {{ termino}}
 </div>
 
 <div class="row">
     <div class="col">
-        <app-pais-table
-        [paises]="paises"></app-pais-table>
+        <app-pais-table 
+        [paises]="paises">
+    </app-pais-table>
     </div>
 </div>
