@@ -50,5 +50,11 @@ export class PaisService {
     return this.http.get<Country[]>(url);
   }
 
+  getPaisPorAlpha(id:string){
+    const url = `${this.apiUrl}/alpha/${id}`;
+    console.log(url)
+    return this.http.get<Country>(url);
+  }
+
 
 }
